@@ -1,0 +1,107 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true,
+        "jest": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "airbnb"
+    ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true,
+            "tsx": true
+        },
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "@typescript-eslint"
+    ],
+    "rules": {
+        "object-curly-newline": [
+            "error",
+            {
+                "ObjectExpression": {
+                    "minProperties": 10,
+                    "multiline": true,
+                    "consistent": true
+                },
+                "ObjectPattern": {
+                    "minProperties": 10,
+                    "multiline": true,
+                    "consistent": true
+                },
+                "ImportDeclaration": {
+                    "minProperties": 10,
+                    "multiline": true,
+                    "consistent": true
+                },
+                "ExportDeclaration": {
+                    "minProperties": 10,
+                    "multiline": true,
+                    "consistent": true
+                }
+            }
+        ],
+        "react/prop-types": "off",
+        "react/jsx-props-no-spreading": "warn",
+        "react/jsx-filename-extension": [
+            "error",
+            {
+                "extensions": [
+                    ".jsx",
+                    ".tsx"
+                ]
+            }
+        ],
+        "react/state-in-constructor": "off",
+        "import/extensions": "off",
+        "indent": "off",
+        "@typescript-eslint/ban-ts-ignore": "warn",
+        "@typescript-eslint/indent": [
+            "error",
+            2
+        ],
+        "@typescript-eslint/prefer-interface": "off",
+        "@typescript-eslint/explicit-function-return-type": [
+            "error",
+            {
+                "allowExpressions": true
+            }
+        ],
+        "@typescript-eslint/no-angle-bracket-type-assertion": "off",
+        "@typescript-eslint/no-unused-vars": [
+            "error",
+            {
+                "vars": "all",
+                "args": "after-used",
+                "ignoreRestSiblings": true
+            }
+        ],
+        "@typescript-eslint/no-empty-function": "off"
+    },
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "extensions": [
+                    ".mjs",
+                    ".js",
+                    ".json",
+                    ".ts",
+                    ".tsx"
+                ],
+                "paths": [
+                    "/src"
+                ]
+            }
+        }
+    }
+}
