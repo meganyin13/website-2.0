@@ -1,0 +1,37 @@
+/* Landing styles */
+.landing {
+  margin: 0;
+  text-align: center;
+  letter-spacing: 2px;
+  background: url("../img/nyc_background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+.headshot {
+  margin-top: 5%;
+  width: 300px;
+  border-radius: 50%;
+}
+
+.text {
+  margin: 5% 0;
+}
+
+.text h1,
+.text h2,
+.text h3 {
+  font-family: 'Nunito', sans-serif;
+  color: #cec8c8;
+  font-weight: bold;
+  margin: 0;
+}
+
+.text h1 {
+  font-size: 5rem;
+}
+
+.text h3 {
+  font-size: 1.5rem;
+}

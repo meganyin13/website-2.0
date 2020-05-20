@@ -1,0 +1,42 @@
+.chevron {
+  height: 80px;
+  width: 110px;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 5%;
+  background-color: #222222;
+  text-align: center;
+  font-size: 4rem;
+  z-index: 6;
+  border-radius: 25px 25px 0 0;
+  border: none;
+
+  animation-name: wiggle;
+  animation-duration: 1.1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+
+.chevron svg {
+  color: #a9a7a7;
+}
+
+.chevron:hover svg {
+  color: #d4d1d1;
+}
+
+@keyframes wiggle {
+  0% {
+      padding-top: -12px;
+  }
+
+  50% {
+      padding-top: 8px;
+  }
+
+  100% {
+      padding-top: -12px;
+  }
+}
