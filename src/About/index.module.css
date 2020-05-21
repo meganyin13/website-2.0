@@ -18,7 +18,7 @@
 }
 
 .Text {
-  font-family: Kalam;
+  font-family: Kalam, sans-serif;
   width: 50%;
 }
 
@@ -36,4 +36,22 @@
   width: 60%;
   display: flex;
   justify-content: space-evenly;
+}
+
+.ConfettiButton {
+  background-color: transparent;
+  border: none;
+  font-family: Kalam, sans-serif;
+  color: blue;
+  text-decoration: underline;
+  font-size: 26px;
+} 
+
+.ConfettiButton:hover {
+  opacity: 0.7;
+}
+
+.ConfettiButton.Clicked {
+  text-decoration: none;
+  color: black;
 }
