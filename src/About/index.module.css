@@ -1,0 +1,39 @@
+.About {
+  height: 100vh;
+  width: 100vw;
+  background-color: #ffdccc99;
+  display: flex;
+  padding: 10% 15%;
+  box-sizing: border-box;
+}
+
+.About .Picture {
+  width: 50%;
+  padding: 5% 0;
+  float: left;
+}
+
+.About .Picture img {
+  width: 350px;
+}
+
+.Text {
+  font-family: Kalam;
+  width: 50%;
+}
+
+.Text .Greeting {
+  margin: 0;
+  font-size: 40px;
+}
+
+.Text p {
+  font-size: 26px;
+}
+
+.Socials {
+  font-size: 30px;
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+}
