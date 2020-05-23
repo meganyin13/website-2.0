@@ -5,13 +5,12 @@
   position: absolute;
   bottom: 0;
   right: 5%;
-  background-color: #222222;
+  background-color: #222;
   text-align: center;
   font-size: 4rem;
   z-index: 6;
   border-radius: 25px 25px 0 0;
   border: none;
-
   animation-name: wiggle;
   animation-duration: 1.1s;
   animation-timing-function: linear;
@@ -29,14 +28,14 @@
 
 @keyframes wiggle {
   0% {
-      padding-top: -12px;
+    padding-top: -12px;
   }
 
   50% {
-      padding-top: 8px;
+    padding-top: 8px;
   }
 
   100% {
-      padding-top: -12px;
+    padding-top: -12px;
   }
 }
