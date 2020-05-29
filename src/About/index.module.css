@@ -55,3 +55,31 @@
   text-decoration: none;
   color: black;
 }
+
+@media screen and (max-width: 840px) {
+  .About {
+    display: block;
+  }
+
+  .About .Picture {
+    display: none;
+  }
+
+  .About .Text {
+    display: block;
+    width: 100%;
+  }
+
+  .Text .Greeting {
+    font-size: 30px;
+  }
+
+  .Text p,
+  .ConfettiButton {
+    font-size: 18px;
+  }
+
+  .Socials {
+    width: 100%;
+  }
+}

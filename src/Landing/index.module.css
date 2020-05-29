@@ -7,6 +7,7 @@
   background-size: cover;
   width: 100vw;
   height: 100vh;
+  color: #cec8c8;
 }
 
 .headshot {
@@ -23,7 +24,6 @@
 .text h2,
 .text h3 {
   font-family: 'Nunito', sans-serif;
-  color: #cec8c8;
   font-weight: bold;
   margin: 0;
 }
@@ -34,4 +34,30 @@
 
 .text h3 {
   font-size: 1.5rem;
+}
+
+@media screen and (max-width: 840px) {
+  .landing {
+    background: #bc7c9ca6;
+    padding: 50px;
+    margin: 0;
+    text-align: center;
+    letter-spacing: 2px;
+    color: black;
+    box-sizing: border-box;
+  }
+
+  .headshot {
+    width: 60vw;
+    border-radius: 50%;
+    margin-bottom: 5rem;
+  }
+
+  .text h1 {
+    font-size: 3rem;
+  }
+
+  .text h3 {
+    font-size: 1.5rem;
+  }
 }
