@@ -3,13 +3,12 @@
   width: 100vw;
   background-color: #ffdccc99;
   display: flex;
-  padding: 10% 15%;
+  padding: 0 10% 5%;
   box-sizing: border-box;
 }
 
 .About .Picture {
-  width: 50%;
-  padding: 5% 0;
+  margin: auto;
   float: left;
 }
 
@@ -20,6 +19,7 @@
 .Text {
   font-family: Kalam, sans-serif;
   width: 50%;
+  margin: auto;
 }
 
 .Text .Greeting {
@@ -66,8 +66,10 @@
   }
 
   .About .Text {
+    padding-top: 10%;
     display: block;
     width: 100%;
+    margin: auto;
   }
 
   .Text .Greeting {
