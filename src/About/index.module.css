@@ -24,11 +24,11 @@
 
 .Text .Greeting {
   margin: 0;
-  font-size: 40px;
+  font-size: 36px;
 }
 
 .Text p {
-  font-size: 26px;
+  font-size: 24px;
 }
 
 .Socials {
@@ -44,7 +44,7 @@
   font-family: Kalam, sans-serif;
   color: blue;
   text-decoration: underline;
-  font-size: 26px;
+  font-size: 24px;
 }
 
 .ConfettiButton:hover {
