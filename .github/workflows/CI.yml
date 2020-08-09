@@ -31,5 +31,5 @@ jobs:
     - name: Run TypeScript Compiler
       run: yarn tsc
    
-    - name: Run Linter
-      run: yarn lint
+    - name: Run Rome check
+      run: rome check
