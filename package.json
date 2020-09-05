@@ -60,5 +60,11 @@
     "stylelint": "^13.5.0",
     "stylelint-config-standard": "^20.0.0",
     "typescript": "^3.8.3"
+  },
+  "reactSnap": {
+    "puppeteerArgs": [
+      "--no-sandbox",
+      "--disable-setuid-sandbox"
+    ]
   }
 }
