@@ -57,12 +57,7 @@ export default (): React.ReactElement => {
             🎉
           </span>
         </p>
-        <div style={{
-          position: 'relative',
-          left: '20%',
-          top: '-10%',
-        }}
-        >
+        <div className={styles.ConfettiContainer}>
           <Confetti active={clickConfetti} config={confettiConfig} />
         </div>
         {clickConfetti
