@@ -51,6 +51,7 @@
                 }
             }
         ],
+        "no-use-before-define": "off",
         "react/prop-types": "off",
         "react/jsx-props-no-spreading": "warn",
         "react/jsx-filename-extension": [
@@ -65,7 +66,10 @@
         "react/state-in-constructor": "off",
         "import/extensions": "off",
         "indent": "off",
-        "@typescript-eslint/ban-ts-ignore": "warn",
+        "@typescript-eslint/ban-ts-comment": [
+            "error",
+            { "ts-expect-error": "allow-with-description" }
+        ],
         "@typescript-eslint/indent": [
             "error",
             2

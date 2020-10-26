@@ -1,7 +1,7 @@
 import React from 'react';
 import ChevronDown from './ChevronDown';
 import headshot from '../img/headshot.jpg';
-import * as styles from './index.module.css';
+import styles from './index.module.css';
 
 export default (): React.ReactElement => (
   <div className={styles.landing}>
