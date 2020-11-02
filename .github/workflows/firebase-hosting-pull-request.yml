@@ -8,6 +8,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: Set up Node
+        uses: actions/setup-node@v1
+      - name: Yarn Install
+        run: yarn install
+      - name: Build frontend
+        run: yarn build
+      - name: Server side rendering
+        run: |
+          yarn add --dev react-snap
+          yarn react-snap
+      - uses: actions/checkout@v2
       - run: yarn build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
