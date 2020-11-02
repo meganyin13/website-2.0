@@ -26,3 +26,5 @@ jobs:
           projectId: meganyin-website
         env:
           FIREBASE_CLI_PREVIEWS: hostingchannels
+        run: |
+          ./node_modules/.bin/firebase deploy --token=$FIREBASE_TOKEN --non-interactive --only hosting
