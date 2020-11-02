@@ -18,8 +18,7 @@ jobs:
         run: |
           yarn add --dev react-snap
           yarn react-snap
-      - uses: actions/checkout@v2
-      - run: yarn build
+      - name: Deploy to Firebase staging
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
