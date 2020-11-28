@@ -1,7 +1,7 @@
 import React from 'react';
 import GoogleFontLoader from 'react-google-font-loader';
 
-export default (): React.ReactElement => (
+const Fonts = (): React.ReactElement => (
   <GoogleFontLoader
     fonts={[
       {
@@ -15,3 +15,5 @@ export default (): React.ReactElement => (
     ]}
   />
 );
+
+export default Fonts;

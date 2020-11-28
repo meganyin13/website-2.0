@@ -3,7 +3,7 @@
   margin: 0;
   text-align: center;
   letter-spacing: 2px;
-  background: url("../img/nyc_background.jpg") no-repeat center center fixed;
+  background: url("/img/nyc_background.jpg") no-repeat center center fixed;
   background-size: cover;
   width: 100vw;
   height: 100vh;

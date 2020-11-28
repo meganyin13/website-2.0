@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
+import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Confetti from 'react-dom-confetti';
-import headshot2 from '../img/headshot2square.jpg';
 import styles from './index.module.css';
 
-export default (): React.ReactElement => {
+const About = (): React.ReactElement => {
   const [clickConfetti, setClickConfetti] = useState(false);
 
   const confettiConfig = {
@@ -23,7 +23,7 @@ export default (): React.ReactElement => {
   return (
     <div className={styles.About}>
       <div className={styles.Picture}>
-        <img src={headshot2} alt="Megan Yin" />
+        <img src="/img/headshot2.jpg" alt="Megan Yin" />
       </div>
       <div className={styles.Text}>
         <h1 className={styles.Greeting}>Hey! I&#39;m Megan.</h1>
@@ -73,3 +73,5 @@ export default (): React.ReactElement => {
     </div>
   );
 };
+
+export default About;

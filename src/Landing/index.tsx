@@ -1,11 +1,10 @@
 import React from 'react';
 import ChevronDown from './ChevronDown';
-import headshot from '../img/headshot.jpg';
 import styles from './index.module.css';
 
-export default (): React.ReactElement => (
+const Landing = (): React.ReactElement => (
   <div className={styles.landing}>
-    <img className={styles.headshot} src={headshot} alt="Megan Yin" />
+    <img className={styles.headshot} src="/img/headshot.jpg" alt="Megan Yin" />
     <div className={styles.text}>
       <h1>Megan Yin</h1>
       <h3>Computer Science @ Cornell University</h3>
@@ -14,3 +13,5 @@ export default (): React.ReactElement => (
     <ChevronDown />
   </div>
 );
+
+export default Landing;

@@ -1,19 +1,17 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-// import '../src/index.css';
-import App from '../src/App';
-import * as serviceWorker from '../src/serviceWorker';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import { faChevronDown, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import Landing from '../src/Landing';
+import About from '../src/About';
 
-const rootElement = document.getElementById('root');
-if (rootElement != null) {
-  if (rootElement.hasChildNodes()) {
-    ReactDOM.hydrate(<App />, rootElement);
-  } else {
-    ReactDOM.render(<App />, rootElement);
-  }
-}
+library.add(fab, faChevronDown, faEnvelope);
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+const App = (): React.ReactElement => (
+  <div className="App">
+    <Landing />
+    <About />
+  </div>
+);
+
+export default App;
