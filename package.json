@@ -24,10 +24,19 @@
     "eject": "react-scripts eject",
     "lint": "eslint . --ext .js --ext .ts --ext .jsx --ext .tsx && stylelint '**/*.css'",
     "lint:fix": "yarn lint --fix",
+    "format": "prettier --write '**/*.{ts,js,tsx,jsx,scss,css,html}'",
+    "format:check": "prettier --check '**/*.{ts,js,tsx,jsx,scss,css,html}'",
     "tsc": "tsc -p tsconfig.json"
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "prettier": {
+    "printWidth": 100,
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "endOfLine": "lf",
+    "proseWrap": "always"
   },
   "browserslist": {
     "production": [
@@ -49,11 +58,14 @@
     "@typescript-eslint/parser": "^4.5.0",
     "eslint": "^7.12.0",
     "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-prettier": "^6.15.0",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jsx-a11y": "^6.3.1",
     "eslint-plugin-react": "^7.21.5",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "prettier": "^2.2.1",
     "stylelint": "^13.7.2",
+    "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-standard": "^20.0.0",
     "typescript": "^4.0.3"
   },

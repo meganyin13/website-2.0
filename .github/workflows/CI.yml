@@ -6,9 +6,9 @@ name: CI
 # events but only for the master branch
 on:
   push:
-    branches: [ master ]
+    branches: [master]
   pull_request:
-    branches: [ master ]
+    branches: [master]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -19,17 +19,20 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-    - uses: actions/checkout@v2
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
 
-    - name: Set up Node
-      uses: actions/setup-node@v1  
-      
-    - name: Yarn Install
-      run: yarn install
+      - name: Set up Node
+        uses: actions/setup-node@v1
 
-    - name: Run TypeScript Compiler
-      run: yarn tsc
-   
-    - name: Run Linter
-      run: yarn lint
+      - name: Yarn Install
+        run: yarn install
+
+      - name: Run TypeScript Compiler
+        run: yarn tsc
+
+      - name: Run Linter
+        run: yarn lint
+
+      - name: Run Prettier
+        run: yarn format:check
