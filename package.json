@@ -19,7 +19,7 @@
   },
   "scripts": {
     "start": "next",
-    "build": "next build",
+    "build": "next build && next export",
     "lint": "eslint . --ext .js --ext .ts --ext .jsx --ext .tsx && stylelint '**/*.css'",
     "lint:fix": "yarn lint --fix",
     "format": "prettier --write '**/*.{ts,js,tsx,jsx,scss,css,html}'",
