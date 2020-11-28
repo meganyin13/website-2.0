@@ -20,8 +20,8 @@
     "jsx": "preserve"
   },
   "include": [
-    "src",
-    "src/firebase"
+    "**/*.ts",
+    "**/*.tsx"
   ],
   "exclude": [
     "node_modules"
