@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import styles from './ChevronDown.module.css';
 
-export default (): React.ReactElement => {
+const ChevronDown = (): React.ReactElement => {
   const scrollDown = (): void => {
     animateScroll.scrollTo(document.documentElement.clientHeight, {
       delay: 100,
@@ -18,3 +18,5 @@ export default (): React.ReactElement => {
     </button>
   );
 };
+
+export default ChevronDown;
