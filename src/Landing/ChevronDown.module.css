@@ -1,13 +1,14 @@
 .chevron {
   height: 80px;
   width: 110px;
+  padding: 0 25px;
   display: block;
   position: absolute;
   bottom: 0;
   right: 5%;
   background-color: #222;
   text-align: center;
-  font-size: 4rem;
+  font-size: 3rem;
   z-index: 6;
   border-radius: 25px 25px 0 0;
   border: none;
