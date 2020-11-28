@@ -18,9 +18,8 @@
     "react-scroll": "^1.8.1"
   },
   "scripts": {
-    "start": "next start",
+    "start": "next",
     "build": "next build",
-    "dev": "next dev",
     "lint": "eslint . --ext .js --ext .ts --ext .jsx --ext .tsx && stylelint '**/*.css'",
     "lint:fix": "yarn lint --fix",
     "format": "prettier --write '**/*.{ts,js,tsx,jsx,scss,css,html}'",

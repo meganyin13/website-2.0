@@ -32,10 +32,14 @@
 }
 
 .Socials {
-  font-size: 30px;
   width: 60%;
   display: flex;
   justify-content: space-evenly;
+}
+
+.Socials a {
+  flex: 1;
+  margin: 10px;
 }
 
 .ConfettiButton {
