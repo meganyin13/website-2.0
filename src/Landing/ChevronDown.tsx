@@ -13,11 +13,7 @@ const ChevronDown = (): React.ReactElement => {
     });
   };
   return (
-    <button
-      type="button"
-      className={styles.chevron}
-      onClick={scrollDown}
-    >
+    <button type="button" className={styles.chevron} onClick={scrollDown}>
       <FontAwesomeIcon icon={faChevronDown} />
     </button>
   );
