@@ -20,9 +20,8 @@
     "jsx": "preserve"
   },
   "include": [
-    "next-env.d.ts",
-    "src",
-    "src/firebase"
+    "**/*.ts",
+    "**/*.tsx"
   ],
   "exclude": [
     "node_modules"
