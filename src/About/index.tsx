@@ -29,16 +29,26 @@ export default (): React.ReactElement => {
         <h1 className={styles.Greeting}>Hey! I&#39;m Megan.</h1>
         <p>I&#39;m a CS student at Cornell University.</p>
         <p>
-          I love creating user interfaces, analyzing data,
-          and just exploring the bleeding edge of web technologies!
+          I love creating user interfaces, analyzing data, and just exploring the bleeding edge of
+          web technologies!
         </p>
         <p>Have a cool idea or just wanna chat? Feel free to connect with me!</p>
         <div className={styles.Socials}>
-          <a aria-label="facebook" href="https://www.facebook.com/meganyin13"><FontAwesomeIcon icon={['fab', 'facebook']} /></a>
-          <a aria-label="instagram" href="https://www.instagram.com/meganyin13/"><FontAwesomeIcon icon={['fab', 'instagram']} /></a>
-          <a aria-label="email" href="mailto:my474@cornell.edu"><FontAwesomeIcon icon="envelope" /></a>
-          <a aria-label="github" href="https://github.com/meganyin13"><FontAwesomeIcon icon={['fab', 'github']} /></a>
-          <a aria-label="linkedin" href="https://www.linkedin.com/in/meganyin13/"><FontAwesomeIcon icon={['fab', 'linkedin']} /></a>
+          <a aria-label="facebook" href="https://www.facebook.com/meganyin13">
+            <FontAwesomeIcon icon={['fab', 'facebook']} />
+          </a>
+          <a aria-label="instagram" href="https://www.instagram.com/meganyin13/">
+            <FontAwesomeIcon icon={['fab', 'instagram']} />
+          </a>
+          <a aria-label="email" href="mailto:my474@cornell.edu">
+            <FontAwesomeIcon icon="envelope" />
+          </a>
+          <a aria-label="github" href="https://github.com/meganyin13">
+            <FontAwesomeIcon icon={['fab', 'github']} />
+          </a>
+          <a aria-label="linkedin" href="https://www.linkedin.com/in/meganyin13/">
+            <FontAwesomeIcon icon={['fab', 'linkedin']} />
+          </a>
         </div>
         <p>
           Also,
@@ -50,25 +60,19 @@ export default (): React.ReactElement => {
             click
           </button>
           for some confetti! &nbsp;
-          <span
-            role="img"
-            aria-label="confetti emoji"
-          >
+          <span role="img" aria-label="confetti emoji">
             🎉
           </span>
         </p>
         <div className={styles.ConfettiContainer}>
           <Confetti active={clickConfetti} config={confettiConfig} />
         </div>
-        {clickConfetti
-          && (
-            <p>
-              Want some more confetti?
-              Check out&nbsp;
-              <a href="https://samwise.today/">Samwise</a>
-              !
-            </p>
-          )}
+        {clickConfetti && (
+          <p>
+            Want some more confetti? Check out&nbsp;
+            <a href="https://samwise.today/">Samwise</a>!
+          </p>
+        )}
       </div>
     </div>
   );
