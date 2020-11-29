@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Confetti from 'react-dom-confetti';
 import styles from './index.module.css';
+import headshot2 from './headshot2.jpg';
 
 const About = (): React.ReactElement => {
   const [clickConfetti, setClickConfetti] = useState(false);
@@ -22,7 +23,7 @@ const About = (): React.ReactElement => {
   return (
     <div className={styles.About}>
       <div className={styles.Picture}>
-        <img src="/img/headshot2.jpg" alt="Megan Yin" />
+        <img src={headshot2} alt="Megan Yin" />
       </div>
       <div className={styles.Text}>
         <h1 className={styles.Greeting}>Hey! I&#39;m Megan.</h1>
