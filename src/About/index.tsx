@@ -23,7 +23,7 @@ const About = (): React.ReactElement => {
   return (
     <div className={styles.About}>
       <div className={styles.Picture}>
-        <img src={headshot2} alt="Megan Yin" />
+        <img src={headshot2.src} alt="Megan Yin" />
       </div>
       <div className={styles.Text}>
         <h1 className={styles.Greeting}>Hey! I&#39;m Megan.</h1>
